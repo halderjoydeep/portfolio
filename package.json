@@ -12,13 +12,17 @@
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.86.1",
     "@react-three/fiber": "^8.14.3",
+    "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
     "maath": "^0.10.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-parallax-tilt": "^1.7.169",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "sharp": "^0.32.6",
+    "tailwind-merge": "^1.14.0",
+    "three": "^0.157.0"
   },
   "devDependencies": {
     "@types/node": "latest",

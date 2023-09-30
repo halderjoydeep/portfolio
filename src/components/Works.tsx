@@ -1,9 +1,5 @@
-import React from 'react'
+const Works: React.FC = () => {
+  return <div>Works</div>;
+};
 
-const Works = () => {
-  return (
-    <div>Works</div>
-  )
-}
-
-export default Works
+export default Works;

@@ -1,9 +1,5 @@
-import React from 'react'
+const Tech: React.FC = () => {
+  return <div>Tech</div>;
+};
 
-const Tech = () => {
-  return (
-    <div>Tech</div>
-  )
-}
-
-export default Tech
+export default Tech;
