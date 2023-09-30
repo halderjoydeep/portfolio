@@ -9,11 +9,12 @@ import { styles } from "@/lib/styles";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar: React.FC = () => {
   const [active, setActive] = useState<string>("");
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
 
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
@@ -21,11 +22,29 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(false);
   });
 
+  useEffect(() => {
+    function handleScroll() {
+      const scrollAmount = window.scrollY;
+      if (scrollAmount > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav
       className={cn(
-        "fixed top-0 z-20 flex w-full items-center bg-primary py-5",
+        "fixed top-0 z-20 flex w-full items-center py-5",
         styles.paddingX,
+        {
+          "bg-transparent": !scrolled,
+          "bg-primary": scrolled,
+        },
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
