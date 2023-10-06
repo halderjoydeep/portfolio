@@ -5,10 +5,14 @@ import Image from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const EducationCard: React.FC<Education> = ({ ...education }) => {
+interface EducationProps extends Education {
+  inView: boolean;
+}
+
+const EducationCard: React.FC<EducationProps> = ({ ...education }) => {
   return (
     <VerticalTimelineElement
-      visible={true}
+      visible={education.inView}
       contentStyle={{
         background: "#1d1836",
         color: "#fff",

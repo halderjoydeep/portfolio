@@ -5,10 +5,14 @@ import Image from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const ExperienceCard: React.FC<Experience> = ({ ...experience }) => {
+interface ExperienceCardProps extends Experience {
+  inView: boolean;
+}
+
+const ExperienceCard: React.FC<ExperienceCardProps> = ({ ...experience }) => {
   return (
     <VerticalTimelineElement
-      visible={true}
+      visible={experience.inView}
       contentStyle={{
         background: "#1d1836",
         color: "#fff",
