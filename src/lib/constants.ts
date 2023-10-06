@@ -539,13 +539,15 @@ const socialLinks = [
 ];
 
 const metadataInfo: Metadata = {
-  metadataBase: new URL("https://www.yourwebsite.com"),
+  metadataBase: new URL("https://joydeephalder.vercel.app/"),
   title: "Joydeep Halder - Portfolio - Software Developer",
   description:
     "Experienced software developer skilled in React, Next.js, JavaScript, TypeScript, Node.js, and more. Let's work together to bring your ideas to life!",
   generator: "Next.js",
   applicationName: "Portfolio of Joydeep Halder",
-  authors: [{ name: "Joydeep Halder", url: "https://nextjs.org" }], //TODO: Change website
+  authors: [
+    { name: "Joydeep Halder", url: "https://joydeephalder.vercel.app/" },
+  ],
   colorScheme: "dark",
   creator: "Joydeep Halder",
   keywords: [
@@ -576,7 +578,7 @@ const metadataInfo: Metadata = {
     title: "Portfolio of Joydeep Halder - Software Developer",
     description:
       "Experienced software developer skilled in JavaScript, TypeScript, React, Next.js, Node.js, and more. Let's work together to bring your ideas to life!",
-    // url: "", // TODO: Add website
+    url: "https://joydeephalder.vercel.app/",
   },
   robots: {
     index: true,

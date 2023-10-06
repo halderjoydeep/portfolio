@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- TODO: Website -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.yourwebsite.com/</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
+    <loc>https://joydeephalder.vercel.app/</loc>
+    <lastmod>2023-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.yourwebsite.com/#about</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
+    <loc>https://joydeephalder.vercel.app/#about</loc>
+    <lastmod>2023-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yourwebsite.com/#skills</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
+    <loc>https://joydeephalder.vercel.app/#skills</loc>
+    <lastmod>2023-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yourwebsite.com/#education</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
+    <loc>https://joydeephalder.vercel.app/#education</loc>
+    <lastmod>2023-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.yourwebsite.com/#projects</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
+    <loc>https://joydeephalder.vercel.app/#projects</loc>
+    <lastmod>2023-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
    <url>
-    <loc>https://www.yourwebsite.com/#testimonials</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
+    <loc>https://joydeephalder.vercel.app/#testimonials</loc>
+    <lastmod>2023-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.yourwebsite.com/#contact</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
+    <loc>https://joydeephalder.vercel.app/#contact</loc>
+    <lastmod>2023-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
