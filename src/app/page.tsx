@@ -1,31 +1,35 @@
 import {
   About,
   Contact,
+  Educations,
   Experience,
-  Feedbacks,
+  Footer,
   Hero,
   Navbar,
+  Projects,
+  Skills,
   StarsCanvas,
-  Tech,
-  Works,
+  Testimonials,
 } from "@/components";
 
 export default function Home() {
   return (
-    <div className="bg-primary relative z-0">
-      <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+    <div className="relative z-0 overflow-hidden bg-primary">
+      <div className="">
         <Navbar />
         <Hero />
       </div>
 
       <About />
+      <Skills />
       <Experience />
-      <Tech />
-      <Works />
-      <Feedbacks />
+      <Projects />
+      <Educations />
+      <Testimonials />
 
       <div className="relative z-0">
         <Contact />
+        <Footer />
         <StarsCanvas />
       </div>
     </div>

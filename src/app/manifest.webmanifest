@@ -1,0 +1,16 @@
+{
+  "name": "Joydeep's Portfolio",
+  "short_name": "Portfolio",
+  "description": "A showcase of my software development skills",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

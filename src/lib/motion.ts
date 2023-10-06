@@ -1,6 +1,6 @@
-import { Direction } from "@/types/motion";
+import { Direction } from "@/types";
 
-export const textVariant = (delay: number) => {
+export const textVariant = ({ delay }: { delay?: number } = {}) => {
   return {
     hidden: {
       y: -50,
@@ -18,12 +18,17 @@ export const textVariant = (delay: number) => {
   };
 };
 
-export const fadeIn = (
-  direction: Direction,
-  type: string,
-  delay: number,
-  duration: number,
-) => {
+export const fadeIn = ({
+  direction,
+  type,
+  delay,
+  duration,
+}: {
+  direction?: Direction;
+  type?: string;
+  delay?: number;
+  duration?: number;
+} = {}) => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -63,12 +68,17 @@ export const zoomIn = (delay: number, duration: number) => {
   };
 };
 
-export const slideIn = (
-  direction: Direction,
-  type: string,
-  delay: number,
-  duration: number,
-) => {
+export const slideIn = ({
+  direction,
+  type,
+  delay,
+  duration,
+}: {
+  direction?: Direction;
+  type?: string;
+  delay?: number;
+  duration?: number;
+}) => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -88,8 +98,8 @@ export const slideIn = (
 };
 
 export const staggerContainer = (
-  staggerChildren: number,
-  delayChildren: number,
+  staggerChildren?: any,
+  delayChildren?: any,
 ) => {
   return {
     hidden: {},

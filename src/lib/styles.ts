@@ -6,7 +6,7 @@ export const styles = {
   heroHeadText:
     "xs:text-[44px] mt-2 text-[36px] font-black text-white sm:text-[60px] lg:text-[80px] lg:leading-[98px]",
   heroSubText:
-    "xs:text-[20px] text-[16px] font-medium text-[#dfd9ff] sm:text-[26px] lg:text-[30px] lg:leading-[40px]",
+    "xs:text-[20px] text-[16px] font-medium text-[#dfd9ff] sm:text-[26px] lg:text-[28px] lg:leading-[40px]",
   sectionHeadText:
     "xs:text-[40px] text-[30px] font-black text-white sm:text-[50px] md:text-[60px]",
   sectionSubText:

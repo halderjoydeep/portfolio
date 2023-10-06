@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+//TODO: Name of my website
+
+Sitemap: https://acme.com/sitemap.xml

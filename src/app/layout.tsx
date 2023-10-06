@@ -1,17 +1,14 @@
-import "./globals.css";
+import { metadataInfo } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import "./globals.css";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Joydeep Halder | Portfolio",
-  description:
-    "Portfolio of Joydeep Halder who is a senior software engineer and full stack developer",
-};
+export const metadata: Metadata = metadataInfo;
 
 export default function RootLayout({
   children,
