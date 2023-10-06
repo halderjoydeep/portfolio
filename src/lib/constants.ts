@@ -539,7 +539,7 @@ const socialLinks = [
 ];
 
 const metadataInfo: Metadata = {
-  // metadataBase: new URL(""), //TODO: Add url
+  metadataBase: new URL("https://www.yourwebsite.com"),
   title: "Joydeep Halder - Portfolio - Software Developer",
   description:
     "Experienced software developer skilled in React, Next.js, JavaScript, TypeScript, Node.js, and more. Let's work together to bring your ideas to life!",
