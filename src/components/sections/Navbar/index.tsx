@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Nav Links */}
         <ul className="hidden list-none flex-row gap-10 sm:flex">
-          {navLinks.map((link) => (
+          {navLinks.slice(0, -1).map((link) => (
             <li
               key={link.id}
               className={cn("text-[18px] font-medium hover:text-[#915EFF]", {
