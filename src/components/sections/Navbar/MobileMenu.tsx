@@ -1,7 +1,7 @@
 "use client";
 
 import { menu } from "@/assets";
-import { navLinks } from "@/lib/constants";
+import { navLinks, socialLinks } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -65,7 +65,8 @@ export default function MobileMenu({ active, setActive }: MobileMenuProps) {
                           />
                         </button>
                       </div>
-                      <div className="relative mt-12 flex-1 px-6 sm:px-6">
+
+                      <div className="relative mb-6 mt-12 flex flex-1 flex-col justify-between px-6 sm:px-6">
                         <ul className="flex list-none flex-col gap-10">
                           {navLinks.map((link) => (
                             <li
@@ -77,12 +78,35 @@ export default function MobileMenu({ active, setActive }: MobileMenuProps) {
                                   "text-secondary": active !== link.title,
                                 },
                               )}
-                              onClick={() => {
-                                setActive(link.title);
-                                setOpen(false);
-                              }}
                             >
-                              <Link href={`#${link.id}`}>{link.title}</Link>
+                              <Link
+                                className="flex w-full"
+                                onClick={() => {
+                                  setActive(link.title);
+                                  setOpen(false);
+                                }}
+                                href={`#${link.id}`}
+                              >
+                                {link.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+
+                        <ul className="flex list-none items-center gap-4">
+                          {socialLinks.map((link, index) => (
+                            <li key={`link-${index}`}>
+                              <Link
+                                className="relative block h-6 w-6"
+                                href={link.url}
+                                target="_blank"
+                              >
+                                <Image
+                                  src={link.icon}
+                                  fill
+                                  alt={`${link.name} icon`}
+                                />
+                              </Link>
                             </li>
                           ))}
                         </ul>
