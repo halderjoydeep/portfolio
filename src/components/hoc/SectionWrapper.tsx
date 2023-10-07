@@ -19,10 +19,10 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({
       variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.15 }}
       className={cn(styles.padding, "relative z-0 mx-auto max-w-7xl")}
     >
-      <span className="hash-span" id={idName}>
+      <span className="-mt-24 block pb-24" id={idName}>
         &nbsp;
       </span>
       {children}

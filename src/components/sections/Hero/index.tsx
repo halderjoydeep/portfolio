@@ -10,7 +10,7 @@ import TypewriterComp from "./TypewriterComp";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative mx-auto mb-12 h-screen w-full pt-[120px] sm:mb-24 md:mb-0">
+    <section className="relative mx-auto h-screen w-full pt-[120px]">
       <div
         className={cn(
           "absolute inset-0 mx-auto grid max-w-7xl grid-cols-1 items-center justify-between gap-5 md:grid-cols-2 ",
