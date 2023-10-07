@@ -50,6 +50,7 @@ import { Metadata } from "next";
 
 const firstName = "Joydeep";
 const lastName = "Halder";
+const email = "halderjoydeep1997@gmail.com";
 
 const githubLink = "https://github.com/halderjoydeep";
 export const roles = ["Full Stack Developer", "App Developer", "Programmer"];
@@ -601,6 +602,7 @@ const metadataInfo: Metadata = {
 
 export {
   educations,
+  email,
   experiences,
   firstName,
   githubLink,

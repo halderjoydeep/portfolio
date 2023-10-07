@@ -1,19 +1,23 @@
 "use client";
 
 import SectionWrapper from "@/components/hoc/SectionWrapper";
+import { email, firstName, lastName } from "@/lib/constants";
 import { slideIn } from "@/lib/motion";
 import { styles } from "@/lib/styles";
 import { ContactType, contactValidator } from "@/schemas/mail";
+import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { EarthCanvas } from "../..";
 
 const Contact: React.FC = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<ContactType>({
     resolver: zodResolver(contactValidator),
@@ -25,7 +29,23 @@ const Contact: React.FC = () => {
   async function sendMail(data: ContactType) {
     setIsLoading(true);
     try {
+      await emailjs.send(
+        `${process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID}`,
+        `${process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID}`,
+        {
+          from_name: data.name,
+          from_email: data.email,
+          message: data.message,
+          to_name: `${firstName} ${lastName}`,
+          to_email: `${email}`,
+        },
+        `${process.env.NEXT_PUBLIC_EMAIL_JS_KEY}`,
+      );
+
+      toast.success("Email sent successfully!");
+      reset();
     } catch (error) {
+      toast.error("Something went wrong!");
     } finally {
       setIsLoading(false);
     }
