@@ -215,7 +215,7 @@ const educations: Education[] = [
 const testimonials: Testimonial[] = [
   {
     testimonial:
-      "Man of inspiration and guidance blended with generosity.Lucky enough to work under him as Jr. frontend dev",
+      "Lucky enough to work under Joy as Jr. Frontend Developer, a man of inspiration, incredible talent and guidance who embodies generosity.",
     name: "Srikanth",
     designation: "SDE",
     company: "Valuelabs",
