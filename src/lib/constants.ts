@@ -296,7 +296,7 @@ const projects: Project[] = [
   {
     name: "Reddit Clone",
     description:
-      "Web applcation inspired by reddit where users can create, join, leave communities and post, comment, upvote or downvote posts as well as comments.",
+      "Web application inspired by reddit where users can create, join, leave communities and post, comment, upvote or downvote posts as well as comments.",
     tags: [
       {
         name: "next.js",
