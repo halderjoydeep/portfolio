@@ -1,4 +1,5 @@
 import { metadataInfo } from "@/lib/constants";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Toaster } from "react-hot-toast";
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         {children}
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
