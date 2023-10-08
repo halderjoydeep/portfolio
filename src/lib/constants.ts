@@ -28,6 +28,7 @@ import {
   redis,
   redux,
   sanity,
+  srikanth,
   tailwind,
   tensorFlow,
   typescript,
@@ -214,11 +215,11 @@ const educations: Education[] = [
 const testimonials: Testimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Joydeep proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Man of inspiration and guidance blended with generosity.Lucky enough to work under him as Jr. frontend dev",
+    name: "Srikanth",
+    designation: "SDE",
+    company: "Valuelabs",
+    image: srikanth.src,
   },
   {
     testimonial:

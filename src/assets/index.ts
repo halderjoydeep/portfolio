@@ -36,6 +36,8 @@ import typescript from "./tech/typescript.png";
 import upstash from "./tech/upstash.svg";
 import vsCode from "./tech/vsCode.png";
 
+import srikanth from "./testimonials/srikanth.jpg";
+
 import universityOfManitoba from "./company/university-of-manitoba.png";
 import valuelabs from "./company/valuelabs.png";
 
@@ -87,6 +89,7 @@ export {
   redis,
   redux,
   sanity,
+  srikanth,
   supabase,
   tailwind,
   tensorFlow,
