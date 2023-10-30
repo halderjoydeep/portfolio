@@ -215,11 +215,19 @@ const educations: Education[] = [
 const testimonials: Testimonial[] = [
   {
     testimonial:
-      "Lucky enough to work under Joy as Jr. Frontend Developer, a man of inspiration, incredible talent and guidance who embodies generosity.",
+      "Lucky enough to work under Joy as Frontend Developer, a man of inspiration, incredible talent and guidance who embodies generosity.",
     name: "Srikanth",
     designation: "SDE",
     company: "Valuelabs",
     image: srikanth.src,
+  },
+  {
+    testimonial:
+      "Knowledgeable as an instructor and cordial as a colleague. Joydeep consistently goes above and beyond, and his recommendations for the client altered the workflow significantly.",
+    name: "Harini G.",
+    designation: "SDE",
+    company: "Valuelabs",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
   {
     testimonial:
@@ -228,14 +236,6 @@ const testimonials: Testimonial[] = [
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Joydeep optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
