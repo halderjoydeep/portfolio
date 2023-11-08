@@ -11,6 +11,7 @@ import {
   firebase,
   git,
   github,
+  harini,
   html,
   javascript,
   linkedin,
@@ -227,16 +228,16 @@ const testimonials: Testimonial[] = [
     name: "Harini G.",
     designation: "SDE",
     company: "Valuelabs",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: harini.src,
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Joydeep does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
+  // {
+  //   testimonial:
+  //     "I've never met a web developer who truly cares about their clients' success like Joydeep does.",
+  //   name: "Chris Brown",
+  //   designation: "COO",
+  //   company: "DEF Corp",
+  //   image: "https://randomuser.me/api/portraits/men/5.jpg",
+  // },
 ];
 
 const projects: Project[] = [

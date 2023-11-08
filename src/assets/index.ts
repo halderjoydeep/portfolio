@@ -36,6 +36,7 @@ import typescript from "./tech/typescript.png";
 import upstash from "./tech/upstash.svg";
 import vsCode from "./tech/vsCode.png";
 
+import harini from "./testimonials/harini.jpeg";
 import srikanth from "./testimonials/srikanth.jpg";
 
 import universityOfManitoba from "./company/university-of-manitoba.png";
@@ -67,6 +68,7 @@ export {
   firebase,
   git,
   github,
+  harini,
   html,
   javascript,
   linkedin,
