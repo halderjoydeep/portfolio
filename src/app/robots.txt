@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://joydeephalder.vercel.app/
+Sitemap: https://joydeephalder.in/
